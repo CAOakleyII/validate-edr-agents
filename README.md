@@ -15,7 +15,29 @@ npm run test
 ```
 
 ## Overview
+This application tests against "mock" EDR agents data.
 
+In order to verify the deletion and modification of files, this application creates them on initialization.
+
+#### File System
+On Windows/Linux machine files will be created, modified and deleted at ~/EDR_Test.
+  - Created : Text file containing "Hello World" at ~/EDR_Test/created.txt
+  - Modified : Text file containing "How are you, Universe?" at ~/EDR_Test/modify-me.txt
+  - Deleted : Text file containing "You should not see this." should be removed at ~/EDR_Test/to-be-deleted.txt
+
+#### Process 
+On Windows machines, notepad.exe will be executed with the parameter of C:\windows\system32\drivers\etc\hosts displaying your host file.
+
+On Linux machines, /bin/ps will be exeecuted with no parameters.
+
+#### Network
+On Windows/Linux machines an HTTPS POST will be made to a demo api endpoint at jsonplaceholder.typicode.com, sending a mock blog post.
+
+A JSON log file will contain a record for each of these activities, along with meta data that presists through multiple runtimes. This will be found at /dist/logs/activity-log.json
+
+The activity "instructions" for an agent are located within edr_agents_template.json, this "emitted" EDR data is mock only, and would likely look and be parsed differently in a real world scenario.
+
+The entry point is app.js, which loops through the activities and invokes a service function that processes each activity and logs them.
 
 ## Technical Decisions
 

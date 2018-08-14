@@ -1,3 +1,5 @@
+'use strict';
+
 const EDRService = require('./lib/services/edr_service')
 const path = require('path')
 
