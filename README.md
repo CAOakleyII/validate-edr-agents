@@ -49,7 +49,7 @@ I use the native http request object provided by nodejs, over implementations su
 
 Due to the size and scope of the project, I decided not to map the edr_agents file to defined models, currently the models are purely data, and do not have any instanced functions requiring models or storing to a database. 
 
-I also decided to use HTTP for my network transaction. However the `HttpService` could be updated to use the same pre-existing pattern for services, and make other network calls based on the activity. e.g. Raw TCP/UDP connections, Messaging Services, etc.
+I also decided to use HTTP for my network transaction. However the `HttpService` could be updated to use the same pre-existing pattern for services to make other network calls based on the activity. e.g. Raw TCP/UDP connections, Messaging Services, etc.
 
 ## To-Dos / Improvements
 Improve test coverage 
