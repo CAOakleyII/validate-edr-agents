@@ -1,0 +1,16 @@
+{
+  "name": "validate-edr-agents",
+  "version": "1.0.0",
+  "description": "Framework that generates endpoint activity on Windows, MacOS, and Linux platforms from an EDR.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Oakley",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "npm": "^6.3.0"
+  }
+}

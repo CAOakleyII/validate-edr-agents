@@ -1,0 +1,82 @@
+[
+  { 
+    "name" : "CrowdStrike-5.3.2",
+    "os": ["win32"],
+    "activities" : [
+      {
+        "activityType" : 0,
+        "path" : "\\EDR_Test\\created.txt",
+        "data" : "Hello World",
+        "extension" : ".txt",
+        "command" : "CREATE"
+      },
+      {
+        "activityType" : 0,
+        "path" : "\\EDR_Test\\modify-me.txt",
+        "data" : "How are you, Universe?",
+        "extension" : ".txt",
+        "command" : "MODIFY"
+      },
+      {
+        "activityType" : 0,
+        "path" : "\\EDR_Test\\to-be-deleted.txt",
+        "extension" : ".txt",
+        "command" : "DELETE"
+      },
+      {
+        "activityType" : 1,
+        "path" : "C:\\Windows\\notepad.exe",
+        "args": []
+      },
+      {
+        "activityType" : 2,
+        "protocol" : "https:",
+        "hostname" : "jsonplaceholder.typicode.com",
+        "path" : "/posts",
+        "port" : "443",
+        "method" : "POST",
+        "body" :  { "title":"foo", "body":"bar", "userId":1 } 
+      }
+    ]
+  },
+  { 
+    "name" : "CrowdStrike-5.3.2",
+    "os": ["linux"],
+    "activities" : [
+      {
+        "activityType" : 0,
+        "path" : "/EDR_Test/test.txt",
+        "data" : "Hello World",
+        "extension" : ".txt",
+        "command" : 0
+      },
+      {
+        "activityType" : 0,
+        "path" : "/EDR_Test/test.txt",
+        "data" : "How are you, Universe?",
+        "extension" : ".txt",
+        "command" : 1
+      },
+      {
+        "activityType" : 0,
+        "path" : "/EDR_Test/test.txt",
+        "extension" : ".txt",
+        "command" : 2
+      },
+      {
+        "activityType" : 1,
+        "path" : "/bin/vim",
+        "args": []
+      },
+      {
+        "activityType" : 2,
+        "protocol" : "https:",
+        "hostname" : "jsonplaceholder.typicode.com",
+        "path" : "/posts",
+        "port" : "443",
+        "method" : "POST",
+        "body" :  { "title":"foo", "body":"bar", "userId":1 } 
+      }
+    ]
+  }
+]
