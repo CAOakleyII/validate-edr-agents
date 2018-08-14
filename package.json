@@ -10,7 +10,6 @@
   "author": "Christopher Oakley",
   "license": "ISC",
   "dependencies": {
-    "fs-extra": "^7.0.0",
-    "npm": "^6.3.0"
+    "fs-extra": "^7.0.0"
   }
 }
