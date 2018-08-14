@@ -2,7 +2,7 @@
 
 ```bash
 # clone this repo
-git clone 
+git clone https://github.com/CAOakleyII/validate-edr-agents.git
 # navigate into the directory
 cd validate-edr-agents
 

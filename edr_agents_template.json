@@ -26,7 +26,7 @@
       {
         "activityType" : 1,
         "path" : "C:\\Windows\\notepad.exe",
-        "args": []
+        "args": ["C:\\Windows\\System32\\drivers\\etc\\hosts"]
       },
       {
         "activityType" : 2,
@@ -65,7 +65,7 @@
       },
       {
         "activityType" : 1,
-        "path" : "/bin/vim",
+        "path" : "/bin/ps",
         "args": []
       },
       {
