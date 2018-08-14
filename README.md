@@ -41,7 +41,7 @@ The entry point is app.js, which loops through the activities and invokes a serv
 
 ## Technical Decisions
 
-I decided to use NodeJs because along with matching the software constraints of Linux, MacOS and Wnidows, it handles non-blocking I/O very well and in a clean manner. This allows the ability to test multiple agents and activities efficiently with easy to maintain code.
+I decided to use NodeJs because along with matching the software constraints of Linux, MacOS and Windows, it handles non-blocking I/O very well and in a clean manner. This allows the ability to test multiple agents and required activities efficiently with easy to maintain code.
 
 Following the open-closed principle within S.O.L.I.D design, I decided to use a registry to maintain which activities we trigger from the EDR Agent.
 
@@ -51,9 +51,5 @@ Due to the size and scope of the project, I decided not to map the edr_agents fi
 
 I also decided to use HTTP for my network transaction. However the `HttpService` could be updated to use the same pre-existing pattern for services, and make other network calls based on the activity. e.g. Raw TCP/UDP connections, Messaging Services, etc.
 
-
 ## To-Dos / Improvements
-
-Unit test negative cases, where an EDR does make a change that is breaking 
-
 Improve test coverage 

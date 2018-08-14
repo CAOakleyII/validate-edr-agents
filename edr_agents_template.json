@@ -6,21 +6,18 @@
       {
         "activityType" : 0,
         "path" : "\\EDR_Test\\created.txt",
-        "data" : "Hello World",
-        "extension" : ".txt",
+        "data" : "Hello World",        
         "command" : "CREATE"
       },
       {
         "activityType" : 0,
         "path" : "\\EDR_Test\\modify-me.txt",
         "data" : "How are you, Universe?",
-        "extension" : ".txt",
         "command" : "MODIFY"
       },
       {
         "activityType" : 0,
         "path" : "\\EDR_Test\\to-be-deleted.txt",
-        "extension" : ".txt",
         "command" : "DELETE"
       },
       {
@@ -47,20 +44,17 @@
         "activityType" : 0,
         "path" : "/EDR_Test/created.txt",
         "data" : "Hello World",
-        "extension" : ".txt",
         "command" : "CREATE"
       },
       {
         "activityType" : 0,
         "path" : "/EDR_Test/modify-me.txt",
-        "data" : "How are you, Universe?",
-        "extension" : ".txt",
+        "data" : "How are you, Universe?",        
         "command" : "MODIFY"
       },
       {
         "activityType" : 0,
         "path" : "/EDR_Test/to-be-deleted.txt",
-        "extension" : ".txt",
         "command" : "DELETE"
       },
       {

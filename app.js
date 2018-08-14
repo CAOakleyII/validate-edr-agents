@@ -11,6 +11,7 @@ let edrAgentsTemplate = path.join(__dirname, 'edr_agents_template.json');
 let edrService = new EDRService(edrAgentsJsonDist)
 
 // initiate our application for assignment specific requirements
+// using the edr_agents_template.json
 edrService.init(edrAgentsTemplate);
 
 // start a process
